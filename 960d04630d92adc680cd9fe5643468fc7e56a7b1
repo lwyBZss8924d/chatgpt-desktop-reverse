@@ -1,0 +1,81 @@
+{
+  "schema": "pouw/v1",
+  "commit": "960d04630d92adc680cd9fe5643468fc7e56a7b1",
+  "business_status": "completed",
+  "scope": "public Desktop App DeepWiki release",
+  "work": [
+    "Publish the nine-page bilingual React workbench with React Flow exploration and readable light/dark diagrams.",
+    "Provide syntax-highlighted copyable evidence and pinned Rust source URLs.",
+    "Align 18 English/Chinese documents, preserve original local history, and publish 42 real captures with mosaics.",
+    "Connect GitHub PR validation and Vercel automatic previews/production deployments."
+  ],
+  "validation": {
+    "model_layout_tests": 10,
+    "documents_verified": 18,
+    "static_pages": 9
+  },
+  "release": {
+    "status": "production_verified",
+    "pull_request": "https://github.com/lwyBZss8924d/chatgpt-desktop-reverse/pull/1",
+    "commit": "960d04630d92adc680cd9fe5643468fc7e56a7b1",
+    "production_url": "https://codex-desktop-deepwiki.vercel.app",
+    "deployment_id": "dpl_BwG4ZHMeHhU1nhRv5E125poAiZcw",
+    "deployment_status": "READY",
+    "trigger": "GitHub merge to main",
+    "pr_ci": {
+      "run_id": 34503336420,
+      "head_commit": "c1e2199160471e8e0b3870fea72c2645228ec25f",
+      "status": "success",
+      "url": "https://github.com/lwyBZss8924d/chatgpt-desktop-reverse/actions/runs/34503336420"
+    },
+    "main_ci": {
+      "conclusion": "success",
+      "databaseId": 34503679643,
+      "event": "push",
+      "headSha": "960d04630d92adc680cd9fe5643468fc7e56a7b1",
+      "status": "completed",
+      "url": "https://github.com/lwyBZss8924d/chatgpt-desktop-reverse/actions/runs/34503679643"
+    },
+    "browser": {
+      "version": "153.0.8010.12",
+      "matrix_checks": 144,
+      "interaction_scenarios": 13,
+      "runtime_errors": 0,
+      "failed_resources": 0
+    },
+    "production_validation": {
+      "pages_http_200": 9,
+      "page_digests_match_manifest": 9,
+      "interaction_checks": [
+        "deep-linked source inspector",
+        "pinned GitHub source",
+        "clipboard copying",
+        "fullscreen graph viewport",
+        "Chinese locale and dark theme persistence",
+        "mobile GUI evidence image"
+      ],
+      "build_manifest_sha256": "6864dba808769be797fd732c99fa16a0d463a4b5956a3e56fec458a40d2ccf3c",
+      "build_manifest_matches_ci": true,
+      "checked_at": "2026-09-10T16:44:44.275Z"
+    }
+  },
+  "research": {
+    "app_version": "26.903.61454",
+    "core_revision": "ddea03ad049142943bdbf13e937b1d67e8c1ba0c",
+    "protocol_methods": 191,
+    "indexed_paths": 350,
+    "ipc_channels": 22,
+    "package_files": 8967,
+    "source_references": 2883
+  },
+  "residual_risks": [
+    "Static literals and syntax establish evidence, not proof of runtime execution.",
+    "The exact match between the referenced OSS revision and the packaged desktop binary is unverified."
+  ],
+  "primary_session_id": "01a08ba2-77d8-7463-90c7-8c693b7fd0ea",
+  "partner_sessions": [],
+  "source_raw_session_ids": [
+    "01a08ba2-77d8-7463-90c7-8c693b7fd0ea"
+  ],
+  "closed_at": "2026-09-10T16:46:37.364146+00:00"
+}
