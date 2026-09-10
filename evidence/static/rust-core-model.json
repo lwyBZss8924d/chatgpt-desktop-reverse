@@ -1,0 +1,1761 @@
+{
+  "generatedFrom": {
+    "repo": "/path/to/codex",
+    "head": "ddea03ad04 2026-09-10",
+    "schema": "codex-rs/app-server-protocol/schema/json/codex_app_server_protocol.v2.schemas.json",
+    "at": "2026-09-10T12:27:18.573Z",
+    "note": "Method names are schema enum literals, not inferred from code."
+  },
+  "totals": {
+    "methods": 191,
+    "clientRequests": 99,
+    "serverRequests": 10,
+    "clientNotifications": 1,
+    "serverNotifications": 81,
+    "domains": 34,
+    "crates": 106,
+    "v1OnlyMethods": 0
+  },
+  "channels": {
+    "clientRequests": {
+      "definition": "ClientRequest",
+      "schema": "v2",
+      "direction": "app → core",
+      "blurb": "The app asks the core to act.",
+      "count": 99,
+      "entries": [
+        {
+          "method": "initialize",
+          "type": "InitializeRequest",
+          "params": "InitializeParams",
+          "domain": "(lifecycle)",
+          "description": null
+        },
+        {
+          "method": "thread/start",
+          "type": "Thread/startRequest",
+          "params": "ThreadStartParams",
+          "domain": "thread",
+          "description": "NEW APIs"
+        },
+        {
+          "method": "thread/resume",
+          "type": "Thread/resumeRequest",
+          "params": "ThreadResumeParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/fork",
+          "type": "Thread/forkRequest",
+          "params": "ThreadForkParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/archive",
+          "type": "Thread/archiveRequest",
+          "params": "ThreadArchiveParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/delete",
+          "type": "Thread/deleteRequest",
+          "params": "ThreadDeleteParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/unsubscribe",
+          "type": "Thread/unsubscribeRequest",
+          "params": "ThreadUnsubscribeParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/name/set",
+          "type": "Thread/name/setRequest",
+          "params": "ThreadSetNameParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/goal/set",
+          "type": "Thread/goal/setRequest",
+          "params": "ThreadGoalSetParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/goal/get",
+          "type": "Thread/goal/getRequest",
+          "params": "ThreadGoalGetParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/goal/clear",
+          "type": "Thread/goal/clearRequest",
+          "params": "ThreadGoalClearParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/metadata/update",
+          "type": "Thread/metadata/updateRequest",
+          "params": "ThreadMetadataUpdateParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/section/move",
+          "type": "Thread/section/moveRequest",
+          "params": "ThreadSectionMoveParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/unarchive",
+          "type": "Thread/unarchiveRequest",
+          "params": "ThreadUnarchiveParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/compact/start",
+          "type": "Thread/compact/startRequest",
+          "params": "ThreadCompactStartParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/shellCommand",
+          "type": "Thread/shellCommandRequest",
+          "params": "ThreadShellCommandParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/approveGuardianDeniedAction",
+          "type": "Thread/approveGuardianDeniedActionRequest",
+          "params": "ThreadApproveGuardianDeniedActionParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/rollback",
+          "type": "Thread/rollbackRequest",
+          "params": "ThreadRollbackParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/revert",
+          "type": "Thread/revertRequest",
+          "params": "ThreadRevertParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/list",
+          "type": "Thread/listRequest",
+          "params": "ThreadListParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "threadSection/list",
+          "type": "ThreadSection/listRequest",
+          "params": "ThreadSectionListParams",
+          "domain": "threadSection",
+          "description": null
+        },
+        {
+          "method": "threadSection/create",
+          "type": "ThreadSection/createRequest",
+          "params": "ThreadSectionCreateParams",
+          "domain": "threadSection",
+          "description": null
+        },
+        {
+          "method": "threadSection/update",
+          "type": "ThreadSection/updateRequest",
+          "params": "ThreadSectionUpdateParams",
+          "domain": "threadSection",
+          "description": null
+        },
+        {
+          "method": "threadSection/delete",
+          "type": "ThreadSection/deleteRequest",
+          "params": "ThreadSectionDeleteParams",
+          "domain": "threadSection",
+          "description": null
+        },
+        {
+          "method": "thread/loaded/list",
+          "type": "Thread/loaded/listRequest",
+          "params": "ThreadLoadedListParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/read",
+          "type": "Thread/readRequest",
+          "params": "ThreadReadParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/turns/list",
+          "type": "Thread/turns/listRequest",
+          "params": "ThreadTurnsListParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/items/list",
+          "type": "Thread/items/listRequest",
+          "params": "ThreadItemsListParams",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/inject_items",
+          "type": "Thread/injectItemsRequest",
+          "params": "ThreadInjectItemsParams",
+          "domain": "thread",
+          "description": "Append raw Responses API items to the thread history without starting a user turn."
+        },
+        {
+          "method": "skills/list",
+          "type": "Skills/listRequest",
+          "params": "SkillsListParams",
+          "domain": "skills",
+          "description": null
+        },
+        {
+          "method": "skills/extraRoots/set",
+          "type": "Skills/extraRoots/setRequest",
+          "params": "SkillsExtraRootsSetParams",
+          "domain": "skills",
+          "description": null
+        },
+        {
+          "method": "hooks/list",
+          "type": "Hooks/listRequest",
+          "params": "HooksListParams",
+          "domain": "hooks",
+          "description": null
+        },
+        {
+          "method": "marketplace/add",
+          "type": "Marketplace/addRequest",
+          "params": "MarketplaceAddParams",
+          "domain": "marketplace",
+          "description": null
+        },
+        {
+          "method": "marketplace/remove",
+          "type": "Marketplace/removeRequest",
+          "params": "MarketplaceRemoveParams",
+          "domain": "marketplace",
+          "description": null
+        },
+        {
+          "method": "marketplace/upgrade",
+          "type": "Marketplace/upgradeRequest",
+          "params": "MarketplaceUpgradeParams",
+          "domain": "marketplace",
+          "description": null
+        },
+        {
+          "method": "plugin/list",
+          "type": "Plugin/listRequest",
+          "params": "PluginListParams",
+          "domain": "plugin",
+          "description": null
+        },
+        {
+          "method": "plugin/installed",
+          "type": "Plugin/installedRequest",
+          "params": "PluginInstalledParams",
+          "domain": "plugin",
+          "description": null
+        },
+        {
+          "method": "plugin/reconcile",
+          "type": "Plugin/reconcileRequest",
+          "params": "PluginReconcileParams",
+          "domain": "plugin",
+          "description": null
+        },
+        {
+          "method": "plugin/read",
+          "type": "Plugin/readRequest",
+          "params": "PluginReadParams",
+          "domain": "plugin",
+          "description": null
+        },
+        {
+          "method": "plugin/skill/read",
+          "type": "Plugin/skill/readRequest",
+          "params": "PluginSkillReadParams",
+          "domain": "plugin",
+          "description": null
+        },
+        {
+          "method": "plugin/share/save",
+          "type": "Plugin/share/saveRequest",
+          "params": "PluginShareSaveParams",
+          "domain": "plugin",
+          "description": null
+        },
+        {
+          "method": "plugin/share/updateTargets",
+          "type": "Plugin/share/updateTargetsRequest",
+          "params": "PluginShareUpdateTargetsParams",
+          "domain": "plugin",
+          "description": null
+        },
+        {
+          "method": "plugin/share/list",
+          "type": "Plugin/share/listRequest",
+          "params": "PluginShareListParams",
+          "domain": "plugin",
+          "description": null
+        },
+        {
+          "method": "plugin/share/checkout",
+          "type": "Plugin/share/checkoutRequest",
+          "params": "PluginShareCheckoutParams",
+          "domain": "plugin",
+          "description": null
+        },
+        {
+          "method": "plugin/share/delete",
+          "type": "Plugin/share/deleteRequest",
+          "params": "PluginShareDeleteParams",
+          "domain": "plugin",
+          "description": null
+        },
+        {
+          "method": "app/read",
+          "type": "App/readRequest",
+          "params": "AppsReadParams",
+          "domain": "app",
+          "description": null
+        },
+        {
+          "method": "app/list",
+          "type": "App/listRequest",
+          "params": "AppsListParams",
+          "domain": "app",
+          "description": null
+        },
+        {
+          "method": "app/installed",
+          "type": "App/installedRequest",
+          "params": "AppsInstalledParams",
+          "domain": "app",
+          "description": null
+        },
+        {
+          "method": "fs/readFile",
+          "type": "Fs/readFileRequest",
+          "params": "FsReadFileParams",
+          "domain": "fs",
+          "description": null
+        },
+        {
+          "method": "fs/writeFile",
+          "type": "Fs/writeFileRequest",
+          "params": "FsWriteFileParams",
+          "domain": "fs",
+          "description": null
+        },
+        {
+          "method": "fs/createDirectory",
+          "type": "Fs/createDirectoryRequest",
+          "params": "FsCreateDirectoryParams",
+          "domain": "fs",
+          "description": null
+        },
+        {
+          "method": "fs/getMetadata",
+          "type": "Fs/getMetadataRequest",
+          "params": "FsGetMetadataParams",
+          "domain": "fs",
+          "description": null
+        },
+        {
+          "method": "fs/readDirectory",
+          "type": "Fs/readDirectoryRequest",
+          "params": "FsReadDirectoryParams",
+          "domain": "fs",
+          "description": null
+        },
+        {
+          "method": "fs/remove",
+          "type": "Fs/removeRequest",
+          "params": "FsRemoveParams",
+          "domain": "fs",
+          "description": null
+        },
+        {
+          "method": "fs/copy",
+          "type": "Fs/copyRequest",
+          "params": "FsCopyParams",
+          "domain": "fs",
+          "description": null
+        },
+        {
+          "method": "fs/watch",
+          "type": "Fs/watchRequest",
+          "params": "FsWatchParams",
+          "domain": "fs",
+          "description": null
+        },
+        {
+          "method": "fs/unwatch",
+          "type": "Fs/unwatchRequest",
+          "params": "FsUnwatchParams",
+          "domain": "fs",
+          "description": null
+        },
+        {
+          "method": "skills/config/write",
+          "type": "Skills/config/writeRequest",
+          "params": "SkillsConfigWriteParams",
+          "domain": "skills",
+          "description": null
+        },
+        {
+          "method": "plugin/install",
+          "type": "Plugin/installRequest",
+          "params": "PluginInstallParams",
+          "domain": "plugin",
+          "description": null
+        },
+        {
+          "method": "plugin/uninstall",
+          "type": "Plugin/uninstallRequest",
+          "params": "PluginUninstallParams",
+          "domain": "plugin",
+          "description": null
+        },
+        {
+          "method": "turn/start",
+          "type": "Turn/startRequest",
+          "params": "TurnStartParams",
+          "domain": "turn",
+          "description": null
+        },
+        {
+          "method": "turn/steer",
+          "type": "Turn/steerRequest",
+          "params": "TurnSteerParams",
+          "domain": "turn",
+          "description": null
+        },
+        {
+          "method": "turn/interrupt",
+          "type": "Turn/interruptRequest",
+          "params": "TurnInterruptParams",
+          "domain": "turn",
+          "description": null
+        },
+        {
+          "method": "review/start",
+          "type": "Review/startRequest",
+          "params": "ReviewStartParams",
+          "domain": "review",
+          "description": null
+        },
+        {
+          "method": "model/list",
+          "type": "Model/listRequest",
+          "params": "ModelListParams",
+          "domain": "model",
+          "description": null
+        },
+        {
+          "method": "modelProvider/capabilities/read",
+          "type": "ModelProvider/capabilities/readRequest",
+          "params": "ModelProviderCapabilitiesReadParams",
+          "domain": "modelProvider",
+          "description": null
+        },
+        {
+          "method": "experimentalFeature/list",
+          "type": "ExperimentalFeature/listRequest",
+          "params": "ExperimentalFeatureListParams",
+          "domain": "experimentalFeature",
+          "description": null
+        },
+        {
+          "method": "permissionProfile/list",
+          "type": "PermissionProfile/listRequest",
+          "params": "PermissionProfileListParams",
+          "domain": "permissionProfile",
+          "description": null
+        },
+        {
+          "method": "experimentalFeature/enablement/set",
+          "type": "ExperimentalFeature/enablement/setRequest",
+          "params": "ExperimentalFeatureEnablementSetParams",
+          "domain": "experimentalFeature",
+          "description": null
+        },
+        {
+          "method": "mcpServer/oauth/login",
+          "type": "McpServer/oauth/loginRequest",
+          "params": "McpServerOauthLoginParams",
+          "domain": "mcpServer",
+          "description": null
+        },
+        {
+          "method": "config/mcpServer/reload",
+          "type": "Config/mcpServer/reloadRequest",
+          "params": null,
+          "domain": "config",
+          "description": null
+        },
+        {
+          "method": "mcpServerStatus/list",
+          "type": "McpServerStatus/listRequest",
+          "params": "ListMcpServerStatusParams",
+          "domain": "mcpServerStatus",
+          "description": null
+        },
+        {
+          "method": "mcpServer/resource/read",
+          "type": "McpServer/resource/readRequest",
+          "params": "McpResourceReadParams",
+          "domain": "mcpServer",
+          "description": null
+        },
+        {
+          "method": "mcpServer/tool/call",
+          "type": "McpServer/tool/callRequest",
+          "params": "McpServerToolCallParams",
+          "domain": "mcpServer",
+          "description": null
+        },
+        {
+          "method": "windowsSandbox/setupStart",
+          "type": "WindowsSandbox/setupStartRequest",
+          "params": "WindowsSandboxSetupStartParams",
+          "domain": "windowsSandbox",
+          "description": null
+        },
+        {
+          "method": "windowsSandbox/readiness",
+          "type": "WindowsSandbox/readinessRequest",
+          "params": null,
+          "domain": "windowsSandbox",
+          "description": null
+        },
+        {
+          "method": "account/login/start",
+          "type": "Account/login/startRequest",
+          "params": "LoginAccountParams",
+          "domain": "account",
+          "description": null
+        },
+        {
+          "method": "account/login/cancel",
+          "type": "Account/login/cancelRequest",
+          "params": "CancelLoginAccountParams",
+          "domain": "account",
+          "description": null
+        },
+        {
+          "method": "account/logout",
+          "type": "Account/logoutRequest",
+          "params": null,
+          "domain": "account",
+          "description": null
+        },
+        {
+          "method": "account/rateLimits/read",
+          "type": "Account/rateLimits/readRequest",
+          "params": "GetAccountRateLimitsParams",
+          "domain": "account",
+          "description": null
+        },
+        {
+          "method": "account/rateLimitResetCredit/consume",
+          "type": "Account/rateLimitResetCredit/consumeRequest",
+          "params": "ConsumeAccountRateLimitResetCreditParams",
+          "domain": "account",
+          "description": null
+        },
+        {
+          "method": "account/usage/read",
+          "type": "Account/usage/readRequest",
+          "params": "GetAccountTokenUsageParams",
+          "domain": "account",
+          "description": null
+        },
+        {
+          "method": "account/workspaceMessages/read",
+          "type": "Account/workspaceMessages/readRequest",
+          "params": null,
+          "domain": "account",
+          "description": null
+        },
+        {
+          "method": "account/sendAddCreditsNudgeEmail",
+          "type": "Account/sendAddCreditsNudgeEmailRequest",
+          "params": "SendAddCreditsNudgeEmailParams",
+          "domain": "account",
+          "description": null
+        },
+        {
+          "method": "feedback/upload",
+          "type": "Feedback/uploadRequest",
+          "params": "FeedbackUploadParams",
+          "domain": "feedback",
+          "description": null
+        },
+        {
+          "method": "command/exec",
+          "type": "Command/execRequest",
+          "params": "CommandExecParams",
+          "domain": "command",
+          "description": "Execute a standalone command (argv vector) under the server's sandbox."
+        },
+        {
+          "method": "command/exec/write",
+          "type": "Command/exec/writeRequest",
+          "params": "CommandExecWriteParams",
+          "domain": "command",
+          "description": "Write stdin bytes to a running `command/exec` session or close stdin."
+        },
+        {
+          "method": "command/exec/terminate",
+          "type": "Command/exec/terminateRequest",
+          "params": "CommandExecTerminateParams",
+          "domain": "command",
+          "description": "Terminate a running `command/exec` session by client-supplied `processId`."
+        },
+        {
+          "method": "command/exec/resize",
+          "type": "Command/exec/resizeRequest",
+          "params": "CommandExecResizeParams",
+          "domain": "command",
+          "description": "Resize a running PTY-backed `command/exec` session by client-supplied `processId`."
+        },
+        {
+          "method": "config/read",
+          "type": "Config/readRequest",
+          "params": "ConfigReadParams",
+          "domain": "config",
+          "description": null
+        },
+        {
+          "method": "externalAgentConfig/detect",
+          "type": "ExternalAgentConfig/detectRequest",
+          "params": "ExternalAgentConfigDetectParams",
+          "domain": "externalAgentConfig",
+          "description": null
+        },
+        {
+          "method": "externalAgentConfig/import",
+          "type": "ExternalAgentConfig/importRequest",
+          "params": "ExternalAgentConfigImportParams",
+          "domain": "externalAgentConfig",
+          "description": null
+        },
+        {
+          "method": "externalAgentConfig/import/recordHistory",
+          "type": "ExternalAgentConfig/import/recordHistoryRequest",
+          "params": "ExternalAgentConfigImportHistoryRecordParams",
+          "domain": "externalAgentConfig",
+          "description": null
+        },
+        {
+          "method": "externalAgentConfig/import/readHistories",
+          "type": "ExternalAgentConfig/import/readHistoriesRequest",
+          "params": null,
+          "domain": "externalAgentConfig",
+          "description": null
+        },
+        {
+          "method": "config/value/write",
+          "type": "Config/value/writeRequest",
+          "params": "ConfigValueWriteParams",
+          "domain": "config",
+          "description": null
+        },
+        {
+          "method": "config/batchWrite",
+          "type": "Config/batchWriteRequest",
+          "params": "ConfigBatchWriteParams",
+          "domain": "config",
+          "description": null
+        },
+        {
+          "method": "configRequirements/read",
+          "type": "ConfigRequirements/readRequest",
+          "params": null,
+          "domain": "configRequirements",
+          "description": null
+        },
+        {
+          "method": "account/read",
+          "type": "Account/readRequest",
+          "params": "GetAccountParams",
+          "domain": "account",
+          "description": null
+        },
+        {
+          "method": "fuzzyFileSearch",
+          "type": "FuzzyFileSearchRequest",
+          "params": "FuzzyFileSearchParams",
+          "domain": "(lifecycle)",
+          "description": null
+        }
+      ]
+    },
+    "serverRequests": {
+      "definition": "ServerRequest",
+      "schema": "combined",
+      "direction": "core → app",
+      "blurb": "The core will not proceed without a UI decision.",
+      "count": 10,
+      "entries": [
+        {
+          "method": "item/commandExecution/requestApproval",
+          "type": "Item/commandExecution/requestApprovalRequest",
+          "params": "CommandExecutionRequestApprovalParams",
+          "domain": "item",
+          "description": "NEW APIs Sent when approval is requested for a specific command execution. This request is used for Turns started via turn/start."
+        },
+        {
+          "method": "item/fileChange/requestApproval",
+          "type": "Item/fileChange/requestApprovalRequest",
+          "params": "FileChangeRequestApprovalParams",
+          "domain": "item",
+          "description": "Sent when approval is requested for a specific file change. This request is used for Turns started via turn/start."
+        },
+        {
+          "method": "item/tool/requestUserInput",
+          "type": "Item/tool/requestUserInputRequest",
+          "params": "ToolRequestUserInputParams",
+          "domain": "item",
+          "description": "EXPERIMENTAL - Request input from the user for a tool call."
+        },
+        {
+          "method": "mcpServer/elicitation/request",
+          "type": "McpServer/elicitation/requestRequest",
+          "params": "McpServerElicitationRequestParams",
+          "domain": "mcpServer",
+          "description": "Request input for an MCP server elicitation."
+        },
+        {
+          "method": "item/permissions/requestApproval",
+          "type": "Item/permissions/requestApprovalRequest",
+          "params": "PermissionsRequestApprovalParams",
+          "domain": "item",
+          "description": "Request approval for additional permissions from the user."
+        },
+        {
+          "method": "item/tool/call",
+          "type": "Item/tool/callRequest",
+          "params": "DynamicToolCallParams",
+          "domain": "item",
+          "description": "Execute a dynamic tool call on the client."
+        },
+        {
+          "method": "account/chatgptAuthTokens/refresh",
+          "type": "Account/chatgptAuthTokens/refreshRequest",
+          "params": "ChatgptAuthTokensRefreshParams",
+          "domain": "account",
+          "description": null
+        },
+        {
+          "method": "attestation/generate",
+          "type": "Attestation/generateRequest",
+          "params": "AttestationGenerateParams",
+          "domain": "attestation",
+          "description": "Generate a fresh upstream attestation result on demand."
+        },
+        {
+          "method": "applyPatchApproval",
+          "type": "ApplyPatchApprovalRequest",
+          "params": "ApplyPatchApprovalParams",
+          "domain": "(lifecycle)",
+          "description": "DEPRECATED APIs below Request to approve a patch. This request is used for Turns started via the legacy APIs (i.e. SendUserTurn, SendUserMessage)."
+        },
+        {
+          "method": "execCommandApproval",
+          "type": "ExecCommandApprovalRequest",
+          "params": "ExecCommandApprovalParams",
+          "domain": "(lifecycle)",
+          "description": "Request to exec a command. This request is used for Turns started via the legacy APIs (i.e. SendUserTurn, SendUserMessage)."
+        }
+      ]
+    },
+    "clientNotifications": {
+      "definition": "ClientNotification",
+      "schema": "combined",
+      "direction": "app → core",
+      "blurb": "Fire-and-forget input from the app.",
+      "count": 1,
+      "entries": [
+        {
+          "method": "initialized",
+          "type": "InitializedNotification",
+          "params": null,
+          "domain": "(lifecycle)",
+          "description": null
+        }
+      ]
+    },
+    "serverNotifications": {
+      "definition": "ServerNotification",
+      "schema": "v2",
+      "direction": "core → app",
+      "blurb": "Streaming progress and state change.",
+      "count": 81,
+      "entries": [
+        {
+          "method": "error",
+          "type": "ErrorNotification",
+          "params": "ErrorNotification",
+          "domain": "(lifecycle)",
+          "description": "NEW NOTIFICATIONS"
+        },
+        {
+          "method": "thread/started",
+          "type": "Thread/startedNotification",
+          "params": "ThreadStartedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/status/changed",
+          "type": "Thread/status/changedNotification",
+          "params": "ThreadStatusChangedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/archived",
+          "type": "Thread/archivedNotification",
+          "params": "ThreadArchivedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/deleted",
+          "type": "Thread/deletedNotification",
+          "params": "ThreadDeletedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/unarchived",
+          "type": "Thread/unarchivedNotification",
+          "params": "ThreadUnarchivedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/closed",
+          "type": "Thread/closedNotification",
+          "params": "ThreadClosedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/reverted",
+          "type": "Thread/revertedNotification",
+          "params": "ThreadRevertedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "skills/changed",
+          "type": "Skills/changedNotification",
+          "params": "SkillsChangedNotification",
+          "domain": "skills",
+          "description": null
+        },
+        {
+          "method": "thread/name/updated",
+          "type": "Thread/name/updatedNotification",
+          "params": "ThreadNameUpdatedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/goal/updated",
+          "type": "Thread/goal/updatedNotification",
+          "params": "ThreadGoalUpdatedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/goal/cleared",
+          "type": "Thread/goal/clearedNotification",
+          "params": "ThreadGoalClearedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/queue/changed",
+          "type": "Thread/queue/changedNotification",
+          "params": "ThreadQueueChangedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "project/changed",
+          "type": "Project/changedNotification",
+          "params": "ProjectChangedNotification",
+          "domain": "project",
+          "description": null
+        },
+        {
+          "method": "thread/project/updated",
+          "type": "Thread/project/updatedNotification",
+          "params": "ThreadProjectUpdatedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/environment/connected",
+          "type": "Thread/environment/connectedNotification",
+          "params": "EnvironmentConnectionNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/environment/disconnected",
+          "type": "Thread/environment/disconnectedNotification",
+          "params": "EnvironmentConnectionNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/settings/updated",
+          "type": "Thread/settings/updatedNotification",
+          "params": "ThreadSettingsUpdatedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/tokenUsage/updated",
+          "type": "Thread/tokenUsage/updatedNotification",
+          "params": "ThreadTokenUsageUpdatedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "turn/started",
+          "type": "Turn/startedNotification",
+          "params": "TurnStartedNotification",
+          "domain": "turn",
+          "description": null
+        },
+        {
+          "method": "hook/started",
+          "type": "Hook/startedNotification",
+          "params": "HookStartedNotification",
+          "domain": "hook",
+          "description": null
+        },
+        {
+          "method": "turn/completed",
+          "type": "Turn/completedNotification",
+          "params": "TurnCompletedNotification",
+          "domain": "turn",
+          "description": null
+        },
+        {
+          "method": "hook/completed",
+          "type": "Hook/completedNotification",
+          "params": "HookCompletedNotification",
+          "domain": "hook",
+          "description": null
+        },
+        {
+          "method": "turn/diff/updated",
+          "type": "Turn/diff/updatedNotification",
+          "params": "TurnDiffUpdatedNotification",
+          "domain": "turn",
+          "description": null
+        },
+        {
+          "method": "turn/plan/updated",
+          "type": "Turn/plan/updatedNotification",
+          "params": "TurnPlanUpdatedNotification",
+          "domain": "turn",
+          "description": null
+        },
+        {
+          "method": "item/started",
+          "type": "Item/startedNotification",
+          "params": "ItemStartedNotification",
+          "domain": "item",
+          "description": null
+        },
+        {
+          "method": "item/autoApprovalReview/started",
+          "type": "Item/autoApprovalReview/startedNotification",
+          "params": "ItemGuardianApprovalReviewStartedNotification",
+          "domain": "item",
+          "description": null
+        },
+        {
+          "method": "item/autoApprovalReview/completed",
+          "type": "Item/autoApprovalReview/completedNotification",
+          "params": "ItemGuardianApprovalReviewCompletedNotification",
+          "domain": "item",
+          "description": null
+        },
+        {
+          "method": "autoApprovalReview/strictReviewRequired",
+          "type": "AutoApprovalReview/strictReviewRequiredNotification",
+          "params": "StrictReviewRequiredNotification",
+          "domain": "autoApprovalReview",
+          "description": null
+        },
+        {
+          "method": "item/completed",
+          "type": "Item/completedNotification",
+          "params": "ItemCompletedNotification",
+          "domain": "item",
+          "description": null
+        },
+        {
+          "method": "item/agentMessage/delta",
+          "type": "Item/agentMessage/deltaNotification",
+          "params": "AgentMessageDeltaNotification",
+          "domain": "item",
+          "description": null
+        },
+        {
+          "method": "item/plan/delta",
+          "type": "Item/plan/deltaNotification",
+          "params": "PlanDeltaNotification",
+          "domain": "item",
+          "description": "EXPERIMENTAL - proposed plan streaming deltas for plan items."
+        },
+        {
+          "method": "command/exec/outputDelta",
+          "type": "Command/exec/outputDeltaNotification",
+          "params": "CommandExecOutputDeltaNotification",
+          "domain": "command",
+          "description": "Stream base64-encoded stdout/stderr chunks for a running `command/exec` session."
+        },
+        {
+          "method": "process/outputDelta",
+          "type": "Process/outputDeltaNotification",
+          "params": "ProcessOutputDeltaNotification",
+          "domain": "process",
+          "description": "Stream base64-encoded stdout/stderr chunks for a running `process/spawn` session."
+        },
+        {
+          "method": "process/exited",
+          "type": "Process/exitedNotification",
+          "params": "ProcessExitedNotification",
+          "domain": "process",
+          "description": "Final exit notification for a `process/spawn` session."
+        },
+        {
+          "method": "item/commandExecution/outputDelta",
+          "type": "Item/commandExecution/outputDeltaNotification",
+          "params": "CommandExecutionOutputDeltaNotification",
+          "domain": "item",
+          "description": null
+        },
+        {
+          "method": "item/commandExecution/terminalInteraction",
+          "type": "Item/commandExecution/terminalInteractionNotification",
+          "params": "TerminalInteractionNotification",
+          "domain": "item",
+          "description": null
+        },
+        {
+          "method": "item/fileChange/outputDelta",
+          "type": "Item/fileChange/outputDeltaNotification",
+          "params": "FileChangeOutputDeltaNotification",
+          "domain": "item",
+          "description": "Deprecated legacy apply_patch output stream notification."
+        },
+        {
+          "method": "item/fileChange/patchUpdated",
+          "type": "Item/fileChange/patchUpdatedNotification",
+          "params": "FileChangePatchUpdatedNotification",
+          "domain": "item",
+          "description": null
+        },
+        {
+          "method": "serverRequest/resolved",
+          "type": "ServerRequest/resolvedNotification",
+          "params": "ServerRequestResolvedNotification",
+          "domain": "serverRequest",
+          "description": null
+        },
+        {
+          "method": "item/mcpToolCall/progress",
+          "type": "Item/mcpToolCall/progressNotification",
+          "params": "McpToolCallProgressNotification",
+          "domain": "item",
+          "description": null
+        },
+        {
+          "method": "mcpServer/oauthLogin/completed",
+          "type": "McpServer/oauthLogin/completedNotification",
+          "params": "McpServerOauthLoginCompletedNotification",
+          "domain": "mcpServer",
+          "description": null
+        },
+        {
+          "method": "mcpServer/startupStatus/updated",
+          "type": "McpServer/startupStatus/updatedNotification",
+          "params": "McpServerStatusUpdatedNotification",
+          "domain": "mcpServer",
+          "description": null
+        },
+        {
+          "method": "mcpServer/event/stream/notification",
+          "type": "McpServer/event/stream/notificationNotification",
+          "params": "McpServerEventStreamNotification",
+          "domain": "mcpServer",
+          "description": null
+        },
+        {
+          "method": "account/updated",
+          "type": "Account/updatedNotification",
+          "params": "AccountUpdatedNotification",
+          "domain": "account",
+          "description": null
+        },
+        {
+          "method": "account/rateLimits/updated",
+          "type": "Account/rateLimits/updatedNotification",
+          "params": "AccountRateLimitsUpdatedNotification",
+          "domain": "account",
+          "description": null
+        },
+        {
+          "method": "app/list/updated",
+          "type": "App/list/updatedNotification",
+          "params": "AppListUpdatedNotification",
+          "domain": "app",
+          "description": null
+        },
+        {
+          "method": "remoteControl/status/changed",
+          "type": "RemoteControl/status/changedNotification",
+          "params": "RemoteControlStatusChangedNotification",
+          "domain": "remoteControl",
+          "description": null
+        },
+        {
+          "method": "externalAgentConfig/import/progress",
+          "type": "ExternalAgentConfig/import/progressNotification",
+          "params": "ExternalAgentConfigImportProgressNotification",
+          "domain": "externalAgentConfig",
+          "description": null
+        },
+        {
+          "method": "externalAgentConfig/import/completed",
+          "type": "ExternalAgentConfig/import/completedNotification",
+          "params": "ExternalAgentConfigImportCompletedNotification",
+          "domain": "externalAgentConfig",
+          "description": null
+        },
+        {
+          "method": "fs/changed",
+          "type": "Fs/changedNotification",
+          "params": "FsChangedNotification",
+          "domain": "fs",
+          "description": null
+        },
+        {
+          "method": "item/reasoning/summaryTextDelta",
+          "type": "Item/reasoning/summaryTextDeltaNotification",
+          "params": "ReasoningSummaryTextDeltaNotification",
+          "domain": "item",
+          "description": null
+        },
+        {
+          "method": "item/reasoning/summaryPartAdded",
+          "type": "Item/reasoning/summaryPartAddedNotification",
+          "params": "ReasoningSummaryPartAddedNotification",
+          "domain": "item",
+          "description": null
+        },
+        {
+          "method": "item/reasoning/textDelta",
+          "type": "Item/reasoning/textDeltaNotification",
+          "params": "ReasoningTextDeltaNotification",
+          "domain": "item",
+          "description": null
+        },
+        {
+          "method": "thread/compacted",
+          "type": "Thread/compactedNotification",
+          "params": "ContextCompactedNotification",
+          "domain": "thread",
+          "description": "Deprecated: Use `ContextCompaction` item type instead."
+        },
+        {
+          "method": "model/rerouted",
+          "type": "Model/reroutedNotification",
+          "params": "ModelReroutedNotification",
+          "domain": "model",
+          "description": null
+        },
+        {
+          "method": "model/verification",
+          "type": "Model/verificationNotification",
+          "params": "ModelVerificationNotification",
+          "domain": "model",
+          "description": null
+        },
+        {
+          "method": "modelProvider/authRecoveryStarted",
+          "type": "ModelProvider/authRecoveryStartedNotification",
+          "params": "AuthRecoveryNotification",
+          "domain": "modelProvider",
+          "description": null
+        },
+        {
+          "method": "modelProvider/authRecoveryCompleted",
+          "type": "ModelProvider/authRecoveryCompletedNotification",
+          "params": "AuthRecoveryNotification",
+          "domain": "modelProvider",
+          "description": null
+        },
+        {
+          "method": "turn/moderationMetadata",
+          "type": "Turn/moderationMetadataNotification",
+          "params": "TurnModerationMetadataNotification",
+          "domain": "turn",
+          "description": null
+        },
+        {
+          "method": "model/safetyBuffering/updated",
+          "type": "Model/safetyBuffering/updatedNotification",
+          "params": "ModelSafetyBufferingUpdatedNotification",
+          "domain": "model",
+          "description": null
+        },
+        {
+          "method": "warning",
+          "type": "WarningNotification",
+          "params": "WarningNotification",
+          "domain": "(lifecycle)",
+          "description": null
+        },
+        {
+          "method": "guardianWarning",
+          "type": "GuardianWarningNotification",
+          "params": "GuardianWarningNotification",
+          "domain": "(lifecycle)",
+          "description": null
+        },
+        {
+          "method": "deprecationNotice",
+          "type": "DeprecationNoticeNotification",
+          "params": "DeprecationNoticeNotification",
+          "domain": "(lifecycle)",
+          "description": null
+        },
+        {
+          "method": "configWarning",
+          "type": "ConfigWarningNotification",
+          "params": "ConfigWarningNotification",
+          "domain": "(lifecycle)",
+          "description": null
+        },
+        {
+          "method": "fuzzyFileSearch/sessionUpdated",
+          "type": "FuzzyFileSearch/sessionUpdatedNotification",
+          "params": "FuzzyFileSearchSessionUpdatedNotification",
+          "domain": "fuzzyFileSearch",
+          "description": null
+        },
+        {
+          "method": "fuzzyFileSearch/sessionCompleted",
+          "type": "FuzzyFileSearch/sessionCompletedNotification",
+          "params": "FuzzyFileSearchSessionCompletedNotification",
+          "domain": "fuzzyFileSearch",
+          "description": null
+        },
+        {
+          "method": "thread/realtime/started",
+          "type": "Thread/realtime/startedNotification",
+          "params": "ThreadRealtimeStartedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/realtime/itemAdded",
+          "type": "Thread/realtime/itemAddedNotification",
+          "params": "ThreadRealtimeItemAddedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/realtime/item/started",
+          "type": "Thread/realtime/item/startedNotification",
+          "params": "ThreadRealtimeItemStartedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/realtime/item/transcript/delta",
+          "type": "Thread/realtime/item/transcript/deltaNotification",
+          "params": "ThreadRealtimeItemTranscriptDeltaNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/realtime/item/completed",
+          "type": "Thread/realtime/item/completedNotification",
+          "params": "ThreadRealtimeItemCompletedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/realtime/transcript/delta",
+          "type": "Thread/realtime/transcript/deltaNotification",
+          "params": "ThreadRealtimeTranscriptDeltaNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/realtime/transcript/done",
+          "type": "Thread/realtime/transcript/doneNotification",
+          "params": "ThreadRealtimeTranscriptDoneNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/realtime/outputAudio/delta",
+          "type": "Thread/realtime/outputAudio/deltaNotification",
+          "params": "ThreadRealtimeOutputAudioDeltaNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/realtime/sdp",
+          "type": "Thread/realtime/sdpNotification",
+          "params": "ThreadRealtimeSdpNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/realtime/error",
+          "type": "Thread/realtime/errorNotification",
+          "params": "ThreadRealtimeErrorNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "thread/realtime/closed",
+          "type": "Thread/realtime/closedNotification",
+          "params": "ThreadRealtimeClosedNotification",
+          "domain": "thread",
+          "description": null
+        },
+        {
+          "method": "windows/worldWritableWarning",
+          "type": "Windows/worldWritableWarningNotification",
+          "params": "WindowsWorldWritableWarningNotification",
+          "domain": "windows",
+          "description": "Notifies the user of world-writable directories on Windows, which cannot be protected by the sandbox."
+        },
+        {
+          "method": "windowsSandbox/setupCompleted",
+          "type": "WindowsSandbox/setupCompletedNotification",
+          "params": "WindowsSandboxSetupCompletedNotification",
+          "domain": "windowsSandbox",
+          "description": null
+        },
+        {
+          "method": "account/login/completed",
+          "type": "Account/login/completedNotification",
+          "params": "AccountLoginCompletedNotification",
+          "domain": "account",
+          "description": null
+        }
+      ]
+    }
+  },
+  "domains": [
+    {
+      "domain": "thread",
+      "total": 52,
+      "byChannel": {
+        "clientRequests": 24,
+        "serverNotifications": 28
+      }
+    },
+    {
+      "domain": "item",
+      "total": 19,
+      "byChannel": {
+        "serverRequests": 5,
+        "serverNotifications": 14
+      }
+    },
+    {
+      "domain": "account",
+      "total": 13,
+      "byChannel": {
+        "clientRequests": 9,
+        "serverRequests": 1,
+        "serverNotifications": 3
+      }
+    },
+    {
+      "domain": "plugin",
+      "total": 12,
+      "byChannel": {
+        "clientRequests": 12
+      }
+    },
+    {
+      "domain": "(lifecycle)",
+      "total": 10,
+      "byChannel": {
+        "clientRequests": 2,
+        "serverRequests": 2,
+        "clientNotifications": 1,
+        "serverNotifications": 5
+      }
+    },
+    {
+      "domain": "fs",
+      "total": 10,
+      "byChannel": {
+        "clientRequests": 9,
+        "serverNotifications": 1
+      }
+    },
+    {
+      "domain": "turn",
+      "total": 8,
+      "byChannel": {
+        "clientRequests": 3,
+        "serverNotifications": 5
+      }
+    },
+    {
+      "domain": "mcpServer",
+      "total": 7,
+      "byChannel": {
+        "clientRequests": 3,
+        "serverRequests": 1,
+        "serverNotifications": 3
+      }
+    },
+    {
+      "domain": "externalAgentConfig",
+      "total": 6,
+      "byChannel": {
+        "clientRequests": 4,
+        "serverNotifications": 2
+      }
+    },
+    {
+      "domain": "command",
+      "total": 5,
+      "byChannel": {
+        "clientRequests": 4,
+        "serverNotifications": 1
+      }
+    },
+    {
+      "domain": "threadSection",
+      "total": 4,
+      "byChannel": {
+        "clientRequests": 4
+      }
+    },
+    {
+      "domain": "skills",
+      "total": 4,
+      "byChannel": {
+        "clientRequests": 3,
+        "serverNotifications": 1
+      }
+    },
+    {
+      "domain": "app",
+      "total": 4,
+      "byChannel": {
+        "clientRequests": 3,
+        "serverNotifications": 1
+      }
+    },
+    {
+      "domain": "model",
+      "total": 4,
+      "byChannel": {
+        "clientRequests": 1,
+        "serverNotifications": 3
+      }
+    },
+    {
+      "domain": "config",
+      "total": 4,
+      "byChannel": {
+        "clientRequests": 4
+      }
+    },
+    {
+      "domain": "marketplace",
+      "total": 3,
+      "byChannel": {
+        "clientRequests": 3
+      }
+    },
+    {
+      "domain": "modelProvider",
+      "total": 3,
+      "byChannel": {
+        "clientRequests": 1,
+        "serverNotifications": 2
+      }
+    },
+    {
+      "domain": "windowsSandbox",
+      "total": 3,
+      "byChannel": {
+        "clientRequests": 2,
+        "serverNotifications": 1
+      }
+    },
+    {
+      "domain": "experimentalFeature",
+      "total": 2,
+      "byChannel": {
+        "clientRequests": 2
+      }
+    },
+    {
+      "domain": "hook",
+      "total": 2,
+      "byChannel": {
+        "serverNotifications": 2
+      }
+    },
+    {
+      "domain": "process",
+      "total": 2,
+      "byChannel": {
+        "serverNotifications": 2
+      }
+    },
+    {
+      "domain": "fuzzyFileSearch",
+      "total": 2,
+      "byChannel": {
+        "serverNotifications": 2
+      }
+    },
+    {
+      "domain": "hooks",
+      "total": 1,
+      "byChannel": {
+        "clientRequests": 1
+      }
+    },
+    {
+      "domain": "review",
+      "total": 1,
+      "byChannel": {
+        "clientRequests": 1
+      }
+    },
+    {
+      "domain": "permissionProfile",
+      "total": 1,
+      "byChannel": {
+        "clientRequests": 1
+      }
+    },
+    {
+      "domain": "mcpServerStatus",
+      "total": 1,
+      "byChannel": {
+        "clientRequests": 1
+      }
+    },
+    {
+      "domain": "feedback",
+      "total": 1,
+      "byChannel": {
+        "clientRequests": 1
+      }
+    },
+    {
+      "domain": "configRequirements",
+      "total": 1,
+      "byChannel": {
+        "clientRequests": 1
+      }
+    },
+    {
+      "domain": "attestation",
+      "total": 1,
+      "byChannel": {
+        "serverRequests": 1
+      }
+    },
+    {
+      "domain": "project",
+      "total": 1,
+      "byChannel": {
+        "serverNotifications": 1
+      }
+    },
+    {
+      "domain": "autoApprovalReview",
+      "total": 1,
+      "byChannel": {
+        "serverNotifications": 1
+      }
+    },
+    {
+      "domain": "serverRequest",
+      "total": 1,
+      "byChannel": {
+        "serverNotifications": 1
+      }
+    },
+    {
+      "domain": "remoteControl",
+      "total": 1,
+      "byChannel": {
+        "serverNotifications": 1
+      }
+    },
+    {
+      "domain": "windows",
+      "total": 1,
+      "byChannel": {
+        "serverNotifications": 1
+      }
+    }
+  ],
+  "v1Only": [],
+  "crates": [
+    "agent-graph-store",
+    "agent-identity",
+    "agent-roles",
+    "analytics",
+    "ansi-escape",
+    "app-server",
+    "app-server-client",
+    "app-server-daemon",
+    "app-server-protocol",
+    "app-server-protocol-noop-macros",
+    "app-server-test-client",
+    "app-server-transport",
+    "apply-patch",
+    "arg0",
+    "async-utils",
+    "attachment-store",
+    "aws-auth",
+    "backend-client",
+    "build-info",
+    "bwrap",
+    "chatgpt",
+    "cli",
+    "cloud-config",
+    "cloud-tasks",
+    "cloud-tasks-client",
+    "cloud-tasks-mock-client",
+    "code-mode",
+    "code-mode-host",
+    "code-mode-protocol",
+    "code-mode-runtime",
+    "codex-api",
+    "codex-backend-openapi-models",
+    "codex-client",
+    "codex-experimental-api-macros",
+    "codex-home",
+    "codex-mcp",
+    "collaboration-mode-templates",
+    "config",
+    "config-schema",
+    "connectors",
+    "context-fragments",
+    "core",
+    "core-api",
+    "core-plugins",
+    "diagnostics",
+    "exec",
+    "exec-server",
+    "exec-server-protocol",
+    "execpolicy",
+    "external-agent-migration",
+    "features",
+    "feedback",
+    "file-search",
+    "file-system",
+    "file-watcher",
+    "git-utils",
+    "guardian-context",
+    "history",
+    "hooks",
+    "http-client",
+    "install-context",
+    "keyring-store",
+    "linux-sandbox",
+    "lmstudio",
+    "login",
+    "message-history",
+    "model-provider",
+    "model-provider-info",
+    "models-manager",
+    "mxc-sandbox",
+    "network-proxy",
+    "ollama",
+    "otel",
+    "otel-trace-websocket",
+    "plugin",
+    "process-hardening",
+    "prompts",
+    "protocol",
+    "realtime-webrtc",
+    "response-debug-context",
+    "responses-api-proxy",
+    "rmcp-client",
+    "rollout",
+    "rollout-trace",
+    "sandboxing",
+    "secrets",
+    "shell-command",
+    "shell-escalation",
+    "skills",
+    "state",
+    "stdio-to-uds",
+    "terminal-detection",
+    "test-binary-support",
+    "thread-manager-sample",
+    "thread-store",
+    "tools",
+    "tui",
+    "uds",
+    "user-verification",
+    "v8-poc",
+    "voice-host",
+    "websocket-client",
+    "windows-sandbox-rs",
+    "windows-sandbox-service",
+    "workload-identity",
+    "worktree"
+  ]
+}

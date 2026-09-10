@@ -1,0 +1,12 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Evidence is binary and must never be line-ending mangled or diffed as text.
+*.png binary
+*.jpg binary
+*.icns binary
+*.wasm binary
+
+# Generated deployment assets preserve upstream byte sequences.
+site/** linguist-generated=true -whitespace
+evidence/static/atlas-model.json linguist-generated=true
