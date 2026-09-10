@@ -1,0 +1,10 @@
+# Derived scratch: intermediate frames from change-detection sweeps
+evidence/runtime/.tmp/
+evidence/runtime/.derived/
+.DS_Store
+node_modules
+.cache/
+test-results/
+.vercel/
+.vercel
+.env*

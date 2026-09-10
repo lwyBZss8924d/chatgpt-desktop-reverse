@@ -1,0 +1,20 @@
+{
+  "source": "https://learn.chatgpt.com/docs/app",
+  "retrievedAt": "2026-09-10T15:16:44.822417+00:00",
+  "assets": [
+    {
+      "file": "chatgpt.svg",
+      "source": "https://learn.chatgpt.com/docs/app",
+      "context": "ChatGPT header brand mark",
+      "sha256": "ca74d7a5ed91941a889d23475f8eb4db18ccc7384bf5b19da0e5229ac8a58213",
+      "geometry": "Official inline SVG paths preserved without modification"
+    },
+    {
+      "file": "codex.svg",
+      "source": "https://learn.chatgpt.com/docs/app",
+      "context": "Codex CLI surface icon",
+      "sha256": "89cc4067b7edfea5d414f71b264bfe64633444ae9a58be9c2e297d3285dfb84b",
+      "geometry": "Official inline SVG paths preserved without modification"
+    }
+  ]
+}

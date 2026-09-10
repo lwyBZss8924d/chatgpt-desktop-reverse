@@ -1,0 +1,6 @@
+{
+  "project": "codex-desktop-deepwiki",
+  "buildCommand": "npm run ci",
+  "status": "git-integration-configured",
+  "productionUrl": "https://codex-desktop-deepwiki.vercel.app"
+}

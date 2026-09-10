@@ -1,0 +1,13 @@
+.git
+.cache
+node_modules
+test-results
+site
+evidence/static/legacy-shots
+evidence/static/legacy-screenshots
+evidence/static/ax-outlines
+evidence/runtime/.tmp
+evidence/runtime/.derived
+
+.env*
+.vercel

@@ -1,0 +1,142 @@
+{
+  "results": [
+    {
+      "name": "settings/01-general",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/02-import",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/03-profile",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/04-appearance",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/05-voice",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/06-configuration",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/07-personalization",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/08-pets",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/09-keyboard-shortcuts",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/10-usage-billing",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/11-analytics",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/12-account",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/13-computer-use",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/14-computer-history",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/15-appshots",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/16-plugins",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/17-browser",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/18-hooks",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/19-connections",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/20-git",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/21-environments",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/22-worktrees",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    },
+    {
+      "name": "settings/23-archived-chats",
+      "ok": true,
+      "coverage": 1,
+      "privacy": "receipt belongs to the original local capture"
+    }
+  ]
+}
