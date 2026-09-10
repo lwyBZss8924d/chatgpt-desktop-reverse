@@ -1,0 +1,32 @@
+{
+  "schema": "pouw/v1",
+  "commit": "53e86fa8983932f864af41e48dba1dc6479bd346",
+  "business_status": "completed",
+  "scope": "public implementation package",
+  "work": "Nine-page bilingual React Flow workbench, normalized evidence, source links, original screenshots with mosaics, and CI/Vercel configuration.",
+  "validation": {
+    "typecheck": "passed",
+    "model_layout_tests": 10,
+    "documents_verified": 18,
+    "static_pages": 9,
+    "browser_matrix_checks": 144,
+    "browser_interactions": 13,
+    "browser_status": "passed",
+    "tested_build_sha256": "6864dba808769be797fd732c99fa16a0d463a4b5956a3e56fec458a40d2ccf3c"
+  },
+  "deployment_observation": {
+    "initial_vercel_build": "failed: document links were checked before the excluded site directory was rebuilt",
+    "fix_commit": "96ae032c3b12beab4d132ff92863a93da53041a4",
+    "fix_preview": "ready"
+  },
+  "residual_risks": [
+    "Static research is not proof of runtime execution.",
+    "OSS reference is not an exact verified match to the packaged binary."
+  ],
+  "primary_session_id": "01a08ba2-77d8-7463-90c7-8c693b7fd0ea",
+  "partner_sessions": [],
+  "source_raw_session_ids": [
+    "01a08ba2-77d8-7463-90c7-8c693b7fd0ea"
+  ],
+  "created_at": "2026-09-10T16:30:18.913968+00:00"
+}
