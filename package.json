@@ -9,7 +9,7 @@
     "research": "node scripts/build-research-model.mjs",
     "docs:build": "node scripts/build-docs.mjs",
     "docs:check": "node scripts/build-docs.mjs --check",
-    "ci": "npm run typecheck && npm test && npm run docs:check && npm run build",
+    "ci": "npm run typecheck && npm test && npm run build && npm run docs:check",
     "typecheck": "tsc --noEmit",
     "test": "node --test tests/*.test.mjs",
     "test:e2e": "node tests/browser.mjs"
