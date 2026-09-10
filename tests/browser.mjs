@@ -214,15 +214,20 @@ try {
     'Fullscreen canvas must use the viewport'
   );
   await page.getByRole('button', { name: 'Toggle fullscreen' }).click();
-  await page.getByRole('searchbox', { name: 'Search this page' }).fill('thread/start');
-  assert.ok(
-    (await page.locator('.catalog-row').count()) > 0,
-    'nested match must keep its capability visible'
+  // Native fullscreen exit is asynchronous. Outside inputs cannot receive text until it ends.
+  await page.waitForFunction(
+    () => !document.fullscreenElement && !document.querySelector('.graph-shell.is-fullscreen')
   );
-  await page.getByRole('searchbox', { name: 'Search this page' }).fill('no_such_feature_827342');
-  await page.locator('.empty-state').waitFor();
+  const featureSearch = page.getByRole('searchbox', { name: 'Search this page' });
+  await featureSearch.fill('thread/start');
+  assert.equal(await featureSearch.inputValue(), 'thread/start');
+  await page.locator('[data-node-id="cap:thread-lifecycle"]').waitFor();
+  await featureSearch.fill('no_such_feature_827342');
+  assert.equal(await featureSearch.inputValue(), 'no_such_feature_827342');
+  await page.locator('.catalog .empty-state').waitFor();
+  assert.equal(await page.locator('.catalog-row').count(), 0);
   await page.getByRole('button', { name: 'Clear search' }).click();
-  assert.ok((await page.locator('.catalog-row').count()) > 0);
+  await page.locator('.catalog-row').first().waitFor();
   await page.locator('.react-flow__node').first().waitFor();
   await page.getByRole('button', { name: 'Read at 100%', exact: true }).click();
   await page.getByRole('button', { name: 'Toggle minimap', exact: true }).click();
@@ -294,6 +299,7 @@ try {
   assert.deepEqual(external, [], 'unexpected external runtime requests');
   const receipt = {
     status: 'passed',
+    browserVersion: browser.version(),
     testedBuildHash,
     matrixChecks: checks.length,
     checks,
