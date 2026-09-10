@@ -1,0 +1,25 @@
+{
+  "schema": "pouw/v1",
+  "commit": "daea069de69595c3e0662557c348f4076e3402d8",
+  "business_status": "completed",
+  "scope": "public release documentation",
+  "work": [
+    "Align English and Chinese delivery instructions and the registered production domain.",
+    "Document separate publication and original-evidence histories.",
+    "Preserve attributes during public snapshot export."
+  ],
+  "validation": {
+    "documents_verified": 18,
+    "relative_links": "passed",
+    "git_diff_check": "passed",
+    "production_domain_registration": "verified",
+    "production_branch": "main"
+  },
+  "release_status": "pending_latest_commit_ci_and_merge",
+  "primary_session_id": "01a08ba2-77d8-7463-90c7-8c693b7fd0ea",
+  "partner_sessions": [],
+  "source_raw_session_ids": [
+    "01a08ba2-77d8-7463-90c7-8c693b7fd0ea"
+  ],
+  "created_at": "2026-09-10T16:29:27.651388+00:00"
+}
