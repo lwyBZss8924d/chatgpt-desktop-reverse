@@ -1,0 +1,20 @@
+{
+  "schema": "pouw/v1",
+  "commit": "c1e2199160471e8e0b3870fea72c2645228ec25f",
+  "business_status": "completed",
+  "scope": "browser acceptance synchronization",
+  "work": "Wait for native fullscreen and the graph fullscreen class to clear before entering search. Assert entered queries, nested result and empty result. Record tested browser version.",
+  "validation": {
+    "reproduced_original_failure": "Chromium headless 153.0.8010.12; fullscreen remained active when filling outside input",
+    "fixed_interaction_scenarios": 13,
+    "fixed_browser_version": "153.0.8010.12",
+    "browser_status": "passed",
+    "git_diff_check": "passed"
+  },
+  "release_status": "pending_complete_remote_ci",
+  "primary_session_id": "01a08ba2-77d8-7463-90c7-8c693b7fd0ea",
+  "partner_sessions": [],
+  "source_raw_session_ids": [
+    "01a08ba2-77d8-7463-90c7-8c693b7fd0ea"
+  ]
+}
