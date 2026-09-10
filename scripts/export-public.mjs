@@ -10,7 +10,7 @@ const ROOT=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const at=process.argv.indexOf('--out');if(at<0)throw new Error('--out is required');const OUT=resolve(process.argv[at+1]);if(OUT===ROOT)throw new Error('Publication export must be isolated from the research checkout');
 const hash=s=>createHash('sha256').update(s).digest('hex');
 await mkdir(OUT,{recursive:true});
-for(const name of ['web','scripts','tests','.github','package.json','package-lock.json','tsconfig.json','vercel.json','.gitignore','.vercelignore'])await cp(join(ROOT,name),join(OUT,name),{recursive:true});
+for(const name of ['web','scripts','tests','.github','package.json','package-lock.json','tsconfig.json','vercel.json','.gitattributes','.gitignore','.vercelignore'])await cp(join(ROOT,name),join(OUT,name),{recursive:true});
 await mkdir(join(OUT,'evidence/static'),{recursive:true});
 const model=JSON.parse(await readFile(join(ROOT,'evidence/static/atlas-model.json'),'utf8'));
 for(const name of ['scan-model','rust-core-model','three-way-model']){

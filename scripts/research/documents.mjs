@@ -233,7 +233,14 @@ ${table([L('Setting','设置'),L('Value','值')],[['GitHub',REPO_URL],['Vercel s
 
 ## ${L('Delivery flow','交付流程')}
 
-${L('The first local package is committed with a machine-readable Git PoUW note. Initialize the specified GitHub remote with the reviewed commit, then use a pull request for deployment integration changes. CI validates types, research inputs, documents, the static build and browser behavior. Vercel Git integration provides branch previews and production delivery from main.', '首次本地打包以 commit 和机器可读 Git PoUW 注记归档。用已走查提交初始化指定 GitHub 远端，再通过 PR 交付部署集成变更。CI 校验类型、研究输入、文档、静态构建及浏览器行为。Vercel Git 集成提供分支预览与 main 生产交付。')}
+${L('Push changes to a feature branch and open a pull request against main. GitHub CI validates types, research inputs, the static build, document links and browser behavior. Vercel Git integration builds a branch preview. Merge after both checks pass; the main commit automatically triggers production delivery to the URL above. The deployment build generates pages before validating their document links, so it works without a prebuilt site directory.', '将变更推送到功能分支并创建面向 main 的 PR。GitHub CI 校验类型、研究输入、静态构建、文档链接和浏览器行为，Vercel Git 集成生成分支预览。两项检查通过后合并，main 提交会自动触发上述地址的生产部署。部署构建先生成页面再验证文档链接，因此不依赖预先生成的 site 目录。')}
+
+${L('The local research archive preserves original screenshots and prior research commits. The public repository contains the current source, normalized evidence and real screenshots with privacy mosaics. Keep these Git histories separate: update public code through its own clone and pull requests. For a new research snapshot, run the export command below from the local research checkout, review the publication diff, then build and test it before pushing. Do not push the archive history into the public remote.', '本地研究归档保留原始截图和历史研究提交，公开仓库存放当前源码、规范化证据和带隐私马赛克的真实截图。两份 Git 历史分别维护：公开代码通过自身克隆与 PR 更新。更新研究快照时，在本地研究工作区运行下方导出命令，走查发布副本的差异，构建与测试后再推送。不要将归档历史推送到公开远端。')}
+
+\`\`\`bash
+# Run only when exporting a new snapshot from the local research archive.
+node scripts/export-public.mjs --out /path/to/publication-checkout
+\`\`\`
 
 ${L('The output preserves `.html` routes, relative local assets, subpath hosting and direct refresh. There is no application backend or required runtime secret. A Vercel project link and Git connection are deployment configuration; they do not alter the archived research snapshot.', '产物保留 `.html` 路由、相对本地资源、子路径托管与直接刷新能力，没有应用后端或必需的运行时密钥。Vercel 项目关联与 Git 连接属于部署配置，不改变归档研究快照。')}
 

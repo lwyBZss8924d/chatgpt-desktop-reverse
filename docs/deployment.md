@@ -7,7 +7,7 @@
 | GitHub | https://github.com/lwyBZss8924d/chatgpt-desktop-reverse |
 | Vercel scope | `<VERCEL_SCOPE>` |
 | Project | codex-desktop-deepwiki |
-| Production URL | Not deployed yet |
+| Production URL | https://codex-desktop-deepwiki.vercel.app |
 | Production branch | main |
 | Install | `npm ci --ignore-scripts` |
 | Build | `npm run ci` |
@@ -16,7 +16,14 @@
 
 ## Delivery flow
 
-The first local package is committed with a machine-readable Git PoUW note. Initialize the specified GitHub remote with the reviewed commit, then use a pull request for deployment integration changes. CI validates types, research inputs, documents, the static build and browser behavior. Vercel Git integration provides branch previews and production delivery from main.
+Push changes to a feature branch and open a pull request against main. GitHub CI validates types, research inputs, the static build, document links and browser behavior. Vercel Git integration builds a branch preview. Merge after both checks pass; the main commit automatically triggers production delivery to the URL above. The deployment build generates pages before validating their document links, so it works without a prebuilt site directory.
+
+The local research archive preserves original screenshots and prior research commits. The public repository contains the current source, normalized evidence and real screenshots with privacy mosaics. Keep these Git histories separate: update public code through its own clone and pull requests. For a new research snapshot, run the export command below from the local research checkout, review the publication diff, then build and test it before pushing. Do not push the archive history into the public remote.
+
+```bash
+# Run only when exporting a new snapshot from the local research archive.
+node scripts/export-public.mjs --out /path/to/publication-checkout
+```
 
 The output preserves `.html` routes, relative local assets, subpath hosting and direct refresh. There is no application backend or required runtime secret. A Vercel project link and Git connection are deployment configuration; they do not alter the archived research snapshot.
 

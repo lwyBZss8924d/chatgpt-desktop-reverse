@@ -2,7 +2,7 @@
 
 An independent engineering analysis workbench for the macOS ChatGPT (Codex) desktop application. Follow a GUI surface through its domain, Electron bridge, Rust protocol or Cloud interface to the source evidence.
 
-[GitHub](https://github.com/lwyBZss8924d/chatgpt-desktop-reverse) · [Official app documentation](https://learn.chatgpt.com/docs/app) · [中文](README_Zh.md)
+[GitHub](https://github.com/lwyBZss8924d/chatgpt-desktop-reverse) · [Official app documentation](https://learn.chatgpt.com/docs/app) · [中文](README_Zh.md) · [DeepWiki](https://codex-desktop-deepwiki.vercel.app)
 
 App archive: **26.903.61454**. OSS reference: [`ddea03ad049142943bdbf13e937b1d67e8c1ba0c`](https://github.com/openai/codex/tree/ddea03ad049142943bdbf13e937b1d67e8c1ba0c). The app binary's exact equivalence to that OSS revision is **unverified**.
 

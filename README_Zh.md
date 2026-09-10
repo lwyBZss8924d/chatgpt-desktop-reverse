@@ -2,7 +2,7 @@
 
 面向 macOS ChatGPT（Codex）桌面应用的独立工程分析工作台。从 GUI 界面出发，经过领域、Electron 桥、Rust 协议或 Cloud 接口，追踪到源码证据。
 
-[GitHub](https://github.com/lwyBZss8924d/chatgpt-desktop-reverse) · [官方应用文档](https://learn.chatgpt.com/docs/app) · [English](README.md)
+[GitHub](https://github.com/lwyBZss8924d/chatgpt-desktop-reverse) · [官方应用文档](https://learn.chatgpt.com/docs/app) · [English](README.md) · [DeepWiki](https://codex-desktop-deepwiki.vercel.app)
 
 App 归档：**26.903.61454**。OSS 参考：[`ddea03ad049142943bdbf13e937b1d67e8c1ba0c`](https://github.com/openai/codex/tree/ddea03ad049142943bdbf13e937b1d67e8c1ba0c)。应用二进制与该 OSS 提交的精确等价关系仍为**未验证**。
 
